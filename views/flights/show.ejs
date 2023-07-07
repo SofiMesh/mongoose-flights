@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+    <div>Airline: </div>
+    <div><%= flight.airline %></div>
+    <div>DepartureNo: </div>
+    <div><%= departs.date %></div>
+    <div>DepartureNo: </div>
+    <div><%= flights.airline %></div>
+    <div>departs</div>
+    <ul>
+      <% flights.airline.forEach(performer => { %>
+       <li><%= airline.name %>  <small><%= flight.departs.toLocaleDateString() %></small></li>
+      <% }) %>
+    </ul>
+    <div>Departs: </div>
+    <div><%= flight.departs? 'Yes' : 'No' %></div>
+  </section>
+  
